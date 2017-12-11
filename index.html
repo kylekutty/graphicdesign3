@@ -17,30 +17,28 @@
 
   <!-- Visualizing Health Value of Food without Effects of Deceptive Marketing Tools -->
   <div id="landingpage">
-    <header name="top" class="seven columns">
-        <h1 >Visualizing Health Value of Food without the Effects of Deceptive Marketing Tools</h1>
-        <h2 >Kyle Kutner</h2>
-    </header>
+    <div name="top" class="five columns gray">
+        <h1 class="offset-by-one ten columns">Food Packaging <br>Honesty Calculator</h1>
+        <h2 class="offset-by-one ten columns">Visualizing Health Value of Food without Effects of Deceptive Marketing Tools</h2>
+    </div>
         
         <div class="instructions">
 
-          <p class="four columns">
-            In recent years, our society has grown more health conscious in our eating habits, most likely due to rising obesity rates and the discovery of several health complications that often accompany said disease. However, <strong>eating healthy is not as straight forward as we might think.</strong> Marketing tricks in the design of food packaging can <strong>alter the health value we perceive in a given food,</strong> and with this deception taking place all throughout the grocery store, it can be almost impossible to select actually healthy foods.
+          <p class="offset-by-one four columns paragraph">
+            In recent years, our society has grown more health conscious in our eating habits, most likely due to rising obesity rates and the discovery of several health complications that often accompany said disease. However, <strong class="bold">eating healthy is not as straight forward as we might think.</strong> Marketing tricks in the design of food packaging can <strong class="bold">alter the health value we perceive in a given food,</strong> and with this deception taking place all throughout the grocery store, it can be almost impossible to select actually healthy foods.
           </p>
 
-          <p class="four columns">
-            This project aims to shine a spotlight on this deception and <strong>to help us begin to see through it.</strong> When you press start you will be prompted with two quizzes. One will be based solely on the packaging of the food and the other solely on the nutritional information of that food. 
+          <p class="offset-by-one four columns paragraph">
+            This project aims to shine a spotlight on this deception and <strong class="bold">to help us begin to see through it.</strong> When you press start you will be prompted with two quizzes. One will be based solely on the packaging of the food and the other solely on the nutritional information of that food. 
           </p>
 
-          <p class="four columns">
-            Once you complete the two quizzes, click on the arrow at the top of the page to reveal two abstract visualizations of <strong>the perceived health on the left and the actual health on the right.</strong> The more inconsistencies that you see signify more dishonesty on the part of the marketing of the food's health. Feel free to return to the quizzes to test more foods or discover which type of motion is being affected by each factor.
-          </p>
+          <h3 id= "start" class="offset-by-one four columns paragraph">start</h3>
+
+        
 
         </div>
 
-        <div id= "start" class="two columns offset-by-nine">
-          <h3>start</h3>
-        </div>
+        
 
 
 
@@ -50,30 +48,42 @@
 
 
 
+  <div id="totalnav" class= "nav">
+
+		  <!-- THIS IS THE LEFT / PACKAGING QUIZ MENU AND THE SLIDERS FOR THE PACKAGING SLIDERS-->
+		  <div id="packagingnav" class="sidenav six columns">
+		    <svg id= "characterSlider" width="500" height="130"></svg>
+		    <svg id= "colorSlider" width="500" height="130"></svg>
+		    <svg id= "healthWordsSlider" width="500" height="130"></svg>
+		    <svg id= "physicalActivityReferenceSlider" width="500" height="130"></svg>
+		    <svg id= "priceSlider" width="500" height="130"></svg>
+		    <svg id= "typeSlider" width="500" height="130"></svg>
+
+			</div>
+			
 
 
-  <!-- THIS IS THE LEFT / PACKAGING QUIZ MENU AND THE SLIDERS FOR THE PACKAGING SLIDERS-->
-  <div id="packagingnav" class="sidenav">
-    <svg id= "characterSlider" width="500" height="130"></svg>
-    <svg id= "colorSlider" width="500" height="130"></svg>
-    <svg id= "healthWordsSlider" width="500" height="130"></svg>
-    <svg id= "physicalActivityReferenceSlider" width="500" height="130"></svg>
-    <svg id= "priceSlider" width="500" height="130"></svg>
-    <svg id= "typeSlider" width="500" height="130"></svg>
+		  <!-- THIS IS THE RIGHT / NUTRITION QUIZ MENU AND THE SLIDERS FOR THE NUTRITION SLIDERS-->
 
-	</div>
-	
+		  <div id="nutritionnav" class="sidenav2 six columns">
+		    <svg id= "sugarSlider" width="500" height="130"></svg>
+		    <svg id= "sodiumSlider" width="500" height="130"></svg>
+		    <svg id= "qualityFatsSlider" width="500" height="130"></svg>
+		    <svg id= "caloricContentSlider" width="500" height="130"></svg>
+		    <svg id= "sugarPrevalenceSlider" width="500" height="130"></svg>
+		    <svg id= "potassiumSlider" width="500" height="130"></svg>
+
+			</div>
 
 
-  <!-- THIS IS THE RIGHT / NUTRITION QUIZ MENU AND THE SLIDERS FOR THE NUTRITION SLIDERS-->
+		  <div id="blurb" class="blurb six columns offset-by-three">
+		    		<p class="blurbwhite">
+		            Once you complete the two quizzes, click submit to reveal two abstract visualizations of <strong class="bolder">the perceived health on the left and the actual health on the right.</strong> The more inconsistencies that you see signify more dishonesty on the part of the marketing of the food's health. Feel free to return to the quizzes to test more foods or discover which type of motion is being affected by each factor.
+		        </p>
 
-  <div id="nutritionnav" class="sidenav2">
-    <svg id= "sugarSlider" width="500" height="130"></svg>
-    <svg id= "sodiumSlider" width="500" height="130"></svg>
-    <svg id= "qualityFatsSlider" width="500" height="130"></svg>
-    <svg id= "caloricContentSlider" width="500" height="130"></svg>
-    <svg id= "sugarPrevalenceSlider" width="500" height="130"></svg>
-    <svg id= "potassiumSlider" width="500" height="130"></svg>
+		        <div id="submit" class="offset-by-five two columns button" onclick="closeNav()" style="cursor:pointer"><h4>submit</h4></div>
+
+		  </div>
 
 	</div>
 
@@ -81,8 +91,8 @@
   <!-- THIS IS THE ARROW -->
 
   <div id="main">
-    <div class="wrapper wrapper3"  id="wrapper3">
-    	<span class="arrow" id="wrapper3sec" onclick="toggleNav()" style="cursor:pointer"></span>
+    <div class="wrapper wrapper3 active"  id="wrapper3">
+    	<span class="arrow" id="wrapper3sec" onclick="openNav()" style="cursor:pointer"></span>
     </div>
   </div>
 
@@ -107,6 +117,8 @@
 <!--     		<svg id='nutritionBlobs'></svg> -->
         <svg id='nutritionline'></svg>
     	</div>
+
+
 </div>
 
 

@@ -5,6 +5,8 @@
 }
 .wrapper3 .arrow:before, .wrapper3 .arrow:after {
   background-color: transparent;
+  visibility: visible;
+  z-index: 0;
   width: 3px;
   height: 10px;
   display: inline-block;
@@ -131,12 +133,11 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-
-.sidenav {
+.nav {
     height: 100%;
-    width: 50%;
+    width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     bottom: 0;
     left: 0;
     background-color: #333;
@@ -144,22 +145,67 @@ body {
     transition: 0.5s;
     padding-bottom: 0px;
     padding-top: 1em;
+}
+
+.sidenav {
+    width: 50%;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    transition: 0.5s;
+    padding-bottom: 0px;
+    padding-top: 6em;
+    overflow: hidden;
+
 
 }
 
 
 .sidenav2 {
-    height: 100%;
     width: 50%;
-    position: fixed;
-    z-index: 1;
+    z-index: 3;
     bottom: 0;
     right: 0;
     background-color: #333;
-    overflow-y: scroll;
     transition: 0.5s;
     padding-bottom: 0px;
-    padding-top: 1em;
+    padding-top:6em;
+    overflow: hidden;
+
+}
+
+.blurbwhite {
+  color: #e5e5e5;
+  font-weight: 100;
+
+}
+
+.blurb {
+  padding-top:3em;
+  padding-bottom: 1em;
+  display: inline-block;
+  overflow: hidden;
+
+}
+
+
+.button {
+  color: #333;
+  background-color: #fff; 
+  border: none;
+  border-radius: 5px;
+  padding-top: .5em;
+  padding-bottom: .25em;
+  padding-left: .5em;
+  padding-right: .5em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 800;
+
 }
 
 
@@ -171,7 +217,7 @@ body {
     margin-bottom: 0px;
     margin-left: -1em;
     left: 50%;
-    z-index: 4;
+    z-index: 2;
 }
 
 
